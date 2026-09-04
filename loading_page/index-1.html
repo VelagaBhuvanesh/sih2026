@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTA + Footer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Barlow:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <section class="cta-footer">
+    <!-- Background HLS Video -->
+    <video
+      id="bg-video"
+      class="cta-footer__video"
+      autoplay
+      loop
+      muted
+      playsinline
+    ></video>
+
+    <!-- Top / bottom fades -->
+    <div class="cta-footer__fade cta-footer__fade--top"></div>
+    <div class="cta-footer__fade cta-footer__fade--bottom"></div>
+
+    <!-- Content -->
+    <div class="cta-footer__content">
+      <p class="cta-footer__mark">Studio</p>
+
+      <h2 class="cta-footer__heading">Your next website is on its way.</h2>
+
+      <div class="loader" role="status" aria-live="polite">
+        <div class="loader__track liquid-glass-strong">
+          <div class="loader__fill" id="loader-fill"></div>
+        </div>
+        <div class="loader__meta">
+          <span class="loader__label" id="loader-label">Loading assets</span>
+          <span class="loader__percent" id="loader-percent">0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.15/hls.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
