@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECHOID — Your voice ID to the E network</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://d8j0ntlcm91z4.cloudfront.net">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="hero" style="--poster-url: url('https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260806_132328_5f9029c8-218f-4489-82b6-29ff2849920e.png');">
+
+  <div class="hero__media">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260806_132328_5f9029c8-218f-4489-82b6-29ff2849920e.png">
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260806_133255_956f653f-5d80-4b06-abd5-0f46c98b60fa.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <nav class="navbar">
+    <a href="#" class="navbar__logo">ECHOID</a>
+    <div class="navbar__cluster">
+      <div class="navbar__links">
+        <a href="#story">Story</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#identity">Identity</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#join" class="navbar__cta desktop-only">Join up</a>
+      <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site menu" aria-hidden="true" inert>
+    <a href="#story" class="mobile-menu__item" style="--i:0">Story</a>
+    <a href="#platforms" class="mobile-menu__item" style="--i:1">Platforms</a>
+    <a href="#identity" class="mobile-menu__item" style="--i:2">Identity</a>
+    <a href="#contact" class="mobile-menu__item" style="--i:3">Contact</a>
+    <a href="#join" class="mobile-menu__item mobile-menu__cta" style="--i:4">Join up</a>
+  </div>
+
+  <div class="hero__body">
+    <div class="panel">
+      <span class="panel__chip">[ Voice entry ]</span>
+      <h1 class="panel__title">ECHOID</h1>
+      <p class="panel__tagline">Your voice ID to the E network.</p>
+
+      <form class="panel__form" action="#" method="post" novalidate>
+        <label class="visually-hidden" for="email">Email</label>
+        <input class="panel__input" type="email" id="email" name="email" placeholder="Email" autocomplete="email">
+        <button type="submit" class="btn btn--ghost">Proceed using email</button>
+        <button type="button" class="btn btn--solid">Access</button>
+      </form>
+
+      <a href="#invite" class="panel__invite">I've got an invite key</a>
+    </div>
+  </div>
+
+  <footer class="legal">
+    <p>Opening an e.xyz account signals that you accept our <a href="#privacy-notice">Privacy Notice</a> and <a href="#service-contract">Service Contract</a>.</p>
+  </footer>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

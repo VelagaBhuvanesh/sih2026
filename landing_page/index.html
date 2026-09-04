@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Power AI</title>
+
+<!-- Body font: Geist Sans -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<style>
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.0.3/index.css');
+</style>
+
+<!-- Headline font: General Sans -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hero-wrapper">
+  <video class="bg-video" id="bgVideo" muted playsinline preload="auto">
+    <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_065045_c44942da-53c6-4804-b734-f9e07fc22e08.mp4" type="video/mp4">
+  </video>
+
+  <section class="hero-section">
+    <div class="blur-shape"></div>
+
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img id="navLogoImg" src="src/assets/logo.png" alt="Logo" height="32">
+      </div>
+
+      <div class="nav-center">
+        <button class="nav-item">
+          Features
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <button class="nav-item">Solutions</button>
+        <button class="nav-item">Plans</button>
+        <button class="nav-item">
+          Learning
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+      </div>
+
+      <div class="nav-right">
+        <button class="btn-hero-secondary nav-signup">Sign Up</button>
+      </div>
+    </nav>
+
+    <div class="nav-divider"></div>
+
+    <div class="hero-content">
+      <h1 class="headline">
+        <span class="text-foreground">Power </span><span class="ai-gradient">AI</span>
+      </h1>
+      <p class="subtitle text-hero-sub">The most powerful AI ever deployed<br>in talent acquisition</p>
+      <button class="btn-hero-secondary cta-button">Schedule a Consult</button>
+    </div>
+
+    <div class="marquee-section">
+      <div class="marquee-inner">
+        <div class="marquee-static-text">Relied on by brands<br>across the globe</div>
+        <div class="marquee-viewport">
+          <div class="marquee-track" id="marqueeTrack"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
